@@ -18,10 +18,10 @@ pipeline {
             steps {
                 bat '''
                 if exist "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\apiowner" (
-                    rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\apiownner"
+                    rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\apiowner"
                 )
                 mkdir "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\apiowner"
-                xcopy /E /I /Y practice\\dist\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\ownerapi"
+                xcopy /E /I /Y practice\\dist\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\apiowner"
                 '''
             }
         }
@@ -45,7 +45,7 @@ pipeline {
                 if exist "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\ownerpractice" (
                     rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\ownerpractice"
                 )
-                copy "demo\\target\\*.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\"
+                copy "demo\\target\\ownerpractice.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\ownerpractice.war"
                 '''
             }
         }
@@ -54,7 +54,7 @@ pipeline {
 
     post {
         success {
-            echo 'Deployment Successful!'
+            echo 'Frontend + Backend deployed successfully!'
         }
         failure {
             echo 'Pipeline Failed.'
