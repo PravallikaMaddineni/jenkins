@@ -47,3 +47,6 @@
 2025-09-24 19:39:23,775 [Worker-26: Launching demo - DemoApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\hydms\Downloads\practicejenkins\demo\src\test\resources
 2025-09-24 19:39:23,776 [Worker-26: Launching demo - DemoApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of demo
 2025-09-24 19:39:23,776 [Worker-26: Launching demo - DemoApplication] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for demo
+2025-09-24 20:23:55,611 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 20:23:56,170 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 20:23:56,189 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\hydms\Downloads\practicejenkins\demo\src\test\resources
